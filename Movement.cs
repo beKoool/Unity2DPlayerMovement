@@ -1,3 +1,7 @@
+// Be Cool
+// A Player Movement Script By TheCoolDev
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,10 +41,6 @@ public class Movement : MonoBehaviour
 
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
-        // if (Input.GetButtonDown("Jump"))
-        // {
-        // 	rb.AddForce(new Vector2(rb.velocity.x, jump));
-        // }
 
         if(facingRight == false && moveInput > 0){
         	Flip();
